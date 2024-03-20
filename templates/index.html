@@ -42,7 +42,7 @@
     <b>Welcome to TextUtilis!</b> You can anything with your text here!
 </div>
   <div class="container">
-    <form action="analyze" method="post">    {% csrf_token %}
+    <form action="analyze" method="post">    {% csrf_token %}   <!--to verify that the request is coming from the authenticated user and not from a malicious source.-->
        <div>
          <label for="floatingTextarea">Enter Your Text</label>
        </div>
